@@ -1,0 +1,28 @@
+#tab_bar { background: #000; padding-top: 12px; padding-left: 12px;}
+#tab_bar button { margin-right: 7px; margin-bottom: 12px;}
+#content {padding: 24px;}
+#content h1 {margin-top: 0; font-size: x-large;}
+
+/* dialer */
+#number_input { font-size: large; text-align: right; width: 92%;}
+#dialer_pad button { margin-top: 12px; margin-right: 12px; font-size: 225%; }
+#dialer_controls button {margin-top: 24px; }
+
+/* contact list */
+#contact_list button { margin-top: 12px; }
+
+/* add contact */
+#content_contact label { margin-top: 24px;}
+#content_contact button { margin-top: 12px; margin-right: 12px;}
+#content_contact input { width: 350px; color:black}
+
+/* low vision */
+
+body { background-color: black; color: white; }
+body, h1, button { font-size: 225%; }
+.pure-button { background-color: black; color: white; border: 3px solid white; }
+.current-tab { color: yellow; }
+
+#lowVisionToggle { margin-top: 24px; }
+
+#number_input { background-color: black; font-size: 225%; border: 3px solid white;}

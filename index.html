@@ -1,0 +1,130 @@
+<html>
+ <head>
+   <title>a6-low vision mattkaiser</title>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+   <link rel="stylesheet" href="phone.css">
+   <!-- Tab links
+<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width">
+ </head>
+
+ <body>
+
+   <!-- Tab links -->
+
+   <div id="tab_bar" class="tab_bar" style="min-width: 960px; margin: 0 auto;">
+     <div class="pure-g">
+     <div class="pure-u-1 pure-u-md-1-4">     <button class="pure-button" onclick="opentab('content_dialer')">Dialer</button> </div>
+     <div class="pure-u-1 pure-u-md-1-4"> <button class="pure-button" onclick="opentab('content_list')">Contacts</button></div>
+     <div class="pure-u-1 pure-u-md-1-4">     <button class="pure-button" onclick="opentab('content_contact')">Add Contact</button></div>
+        <div class="pure-u-1 pure-u-md-1-4">     <button class="pure-button" onclick="opentab('content_gestures')">Test Gestures</button></div>
+     </div>
+
+
+
+
+   </div>
+   <div id="content"class="content_holder">
+
+   <div id="content_dialer" class="tab_content"  style="min-width: 960px; margin: 0 auto;">
+
+     <div class="pure-g">
+     <div class="pure-u-1 pure-u-md-1-3">   </div>
+     <div class="pure-u-1 pure-u-md-1-3">     <input id="phonenumber" placeholder="123-456-7890"></div>
+     <div class="pure-u-1 pure-u-md-1-3">   </div>
+</div>
+
+
+<br />
+<br />
+     <div class="pure-g">
+         <div class="pure-u-1 pure-u-md-1-3">
+              <button class="pure-button" onclick="moveNumbers(1)">1</button> </div>
+         <div class="pure-u-1 pure-u-md-1-3">   <button class="pure-button" onclick="moveNumbers(2)">2</button></div>
+         <div class="pure-u-1 pure-u-md-1-3"><button class="pure-button" onclick="moveNumbers(3)">3</button> </div>
+     </div>
+     <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button" onclick="moveNumbers(4)">4</button> </div>
+    <div class="pure-u-1 pure-u-md-1-3">
+     <button class="pure-button"onclick="moveNumbers(5)">5</button></div>
+    <div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button"onclick="moveNumbers(6)">6</button> </div>
+</div>
+
+<div class="pure-g">
+<div class="pure-u-1 pure-u-md-1-3">   <button class="pure-button"onclick="moveNumbers(7)">7</button> </div>
+<div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button"onclick="moveNumbers(8)">8</button> </div>
+<div class="pure-u-1 pure-u-md-1-3">      <button class="pure-button"onclick="moveNumbers(9)">9</button> </div>
+</div>
+<div class="pure-g">
+<div class="pure-u-1 pure-u-md-1-3">   </div>
+<div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button"onclick="moveNumbers(0)">0</button> </div>
+<div class="pure-u-1 pure-u-md-1-3">   </div>
+</div>
+<div class="pure-g">
+<div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button">Call</button>   </div>
+<div class="pure-u-1 pure-u-md-1-3"> </div>
+<div class="pure-u-1 pure-u-md-1-3">  <button id="clear"class="pure-button">Clear</button>  </div>
+</div>
+ </div>
+
+
+   <div id="content_list" class="tab_content"  style="min-width: 960px; margin: 0 auto;">
+     <div class="pure-g">
+     <div class="pure-u-1 pure-u-md-1-3">   <button class="pure-button">Matt Kaiser</button> </div>
+     <div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button">Jose Doe</button> </div>
+     <div class="pure-u-1 pure-u-md-1-3">      <button class="pure-button">Sam Walker</button> </div>
+     </div>
+     <div class="pure-g">
+     <div class="pure-u-1 pure-u-md-1-3">   <button class="pure-button">Jane Dinosaur</button> </div>
+     <div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button">John Frank</button> </div>
+
+     <div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button">John Frank</button> </div>
+     </div>
+     <div class="pure-g">
+     <div class="pure-u-1 pure-u-md-1-3">   <button class="pure-button">Ben Goldman</button> </div>
+     <div class="pure-u-1 pure-u-md-1-3"> <button class="pure-button">Shaun Kane</button> </div>
+     <div class="pure-u-1 pure-u-md-1-3">      <button class="pure-button">Julien Green</button> </div>
+     </div>
+
+   </div>
+
+   <div id="content_contact" class="tab_content"  style="min-width: 960px; margin: 0 auto;">
+     <form class="pure-form pure-form-stacked">
+	  <label for="name">Name</label>
+	  <input id="name" placeholder="Matt Kaiser">
+    <label for="Phone Number">Phone Number</label>
+    <input id="Phone Number" placeholder="123-456-7890">
+    <label for="Email Address">Email Address</label>
+    <input id="Email Address" placeholder="email@colorado.edu">
+
+
+</form>
+<div class="pure-g">
+<div class="pure-u-1 pure-u-md-1-2">    <button class="pure-button" id="idName">Add Contact</button> </div>
+<div class="pure-u-1 pure-u-md-1-2"> <button class="pure-button" id="idName">Clear</button>  </div>
+
+</div>
+
+   </div>
+
+    <div id="content_gestures" class="tab_content"  style="min-width: 960px; margin: 0 auto;">
+      <h2>Gesture Practice</h2>
+      <br />
+      <br />
+      <div id="gesture_out">
+
+      </div>
+      <br>
+      <div id="gesture_input">
+      </div>
+      <div class="pure-u-1 pure-u-md-1-2"> <button class="pure-button" id="reset">reset</button>  </div>
+
+    </div>
+   </div>
+   <div id="lowVisionToggle"><a href="large.html">Toggle Low Vision Mode</a></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="phone.js"></script>
+ </body>
+</html>

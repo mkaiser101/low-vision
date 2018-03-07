@@ -1,0 +1,27 @@
+/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+button { width: 120px; height: 30px; background: black; color: yellow; margin: 10px; }
+
+/* make all tags with the "cool" class name have blue text */
+.cool { color: blue; }
+
+/* make the button with ID "delete" red */
+#delete { background: red; }
+
+.tab_bar {
+    color = green;
+    padding: 6px 12px;
+
+}
+
+/* Style the tab content */
+.tab_content {
+    display: none;
+    padding: 6px 12px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #ccc;
+}
+
+
+#gesture_out { background: #ccc; border-style: solid; border-width: 25x; border-color: #ccc; width: 100px; height: 25px;}
+
+#gesture_input { background: #ccc; width: 250px;  height: 250px; border-style: solid; border-width:15px; border-color: black; }
